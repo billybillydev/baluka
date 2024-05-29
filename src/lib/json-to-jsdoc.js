@@ -1,5 +1,3 @@
-import fs from "fs";
-import path from "path";
 
 /**
  * Generates JSDoc properties for a given object.
@@ -55,21 +53,24 @@ function getJSDocType(value) {
 }
 
 /**
- * Converts a JSON file to JSDoc type definitions.
+ * Converts a JSON value to JSDoc type definitions.
  * @example
- * jsonToJSDocTypes("example.json", "IExample")
- * @param {string} filePath - The path to the JSON file.
- * @param {string} [typeName] - The name of the interface.
+ * jsonToJSDocTypes("{
+ *    "userId": 1,
+ *    "id": 1,
+ *    "title": "delectus aut autem",
+ *    "completed": false
+ * }", "IExample")
+ * @param {string} jsonValue - The JSON value.
+ * @param {string} [typeName] - The typedef name.
  * @returns {string} - The JSDoc type definitions.
  */
-export function jsonToJSDocTypes(filePath, typeName) {
-  const jsonContent = fs.readFileSync(filePath, "utf8");
-  const jsonObject = JSON.parse(jsonContent);
-  const name = typeName ?? path.basename(filePath, path.extname(filePath));
+export function jsonToJSDocTypes(jsonValue, typeName) {
+  const jsonObject = JSON.parse(jsonValue);
 
   /** @type {Array<string>} */
   const properties = [];
   generateProperties(jsonObject, "", properties);
 
-  return `/**\n * @typedef ${name}\n${properties.join("\n")}\n */`;
+  return `/**\n * @typedef {object} ${typeName}\n${properties.join("\n")}\n */\n`;
 }

@@ -1,0 +1,3 @@
+/**
+ * @typedef {"json" | "ts"} FormatType
+ */

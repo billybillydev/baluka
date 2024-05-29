@@ -1,0 +1,166 @@
+{
+  "home": {
+    "seo": {
+      "title": "Agence Mosi"
+    },
+    "content": {
+      "activities": ["évènementiel", "marketing", "communication digitale"],
+      "motto": ["être meilleur", "pour les autres"],
+      "communication": "communication"
+    }
+  },
+  "about": {
+    "seo": {
+      "title": "A propos de nous"
+    },
+    "content": {
+      "title": ["qui sommes", "nous ?"],
+      "presentation": "MOSI Agency » L’Expertise IT Services 36O°.",
+      "specialization": "MOSI AGENCY est une entreprise spécialisée dans la communication globale offrant une vaste gamme de services, notamment la production de supports visuels diversifiés et des conseils en communication.",
+      "expertise": "Notre expertise s'étend également à l'ingénierie informatique, permettant des solutions novatrices à moindre coût. Dans ce domaine, nos services incluent :",
+      "sections": [
+        {
+          "label": "ingénierie informatique",
+          "items": [
+            "Développement de logiciels sur mesure",
+            "Solutions informatiques adaptées aux besoins spécifiques",
+            "Intégration de systèmes"
+          ]
+        },
+        {
+          "label": "services de communication",
+          "items": [
+            "Production de supports visuels variés",
+            "Conseil en stratégies de communication",
+            "Conception de publicités",
+            "Reportages",
+            "Community Management",
+            "Création de sites web"
+          ]
+        }
+      ]
+    }
+  },
+  "contact": {
+    "seo": {
+      "title": "Contactez-nous"
+    },
+    "content": {
+      "address": "Meudon la forêt, 92360",
+      "telephone": "+33663741976",
+      "email": "contact@mosi-agency",
+      "partnership": {
+        "label": "En partenariat avec :",
+        "name": "icell technologies"
+      }
+    }
+  },
+  "services": {
+    "seo": {
+      "title": "Nos Services"
+    },
+    "content": {
+      "title": "nos services",
+      "items": [
+        "organisation de célébrations festives",
+        "organisation d'événements culturels",
+        "mise en place d'un réseau d'influence",
+        "coordination d'une compagne marketing",
+        "optimisation sur google (seo)",
+        "services google analytics",
+        "google ads",
+        "publicité payante sur les réseaux sociaux (meta ads)",
+        "marketing des réseaux sociaux",
+        "personal branding",
+        "création de contenus",
+        "conception et développement de sites web",
+        "développement d'applications mobiles",
+        "hébergement web & nom de domaine",
+        "adresses e-mails personnalisées",
+        "design graphique (infographie)",
+        "design de documents d'entreprises (en-tête, factures,..)",
+        "publicités & reportages",
+        "infogérance (maintenance matérielle & logicielle)"
+      ]
+    }
+  },
+  "notFound": {
+    "seo": {
+      "title": "Page non trouvée"
+    }
+  },
+  "menu": [
+    { "key": "home", "link": "/", "text": "accueil" },
+    { "key": "about", "link": "/a-propos-de-nous", "text": "a propos de nous" },
+    { "key": "contact", "link": "/contact", "text": "contact" },
+    { "key": "services", "link": "/services", "text": "nos services" },
+    {
+      "key": "pricing",
+      "link": "/nos-tarifs",
+      "text": "tarifs",
+      "children": [
+        {
+          "key": "event-planning",
+          "link": "/event-planning",
+          "text": "service évènementiel"
+        },
+        {
+          "key": "marketing-campaign",
+          "link": "/marketing-campaign",
+          "text": "campagnes marketing"
+        },
+        {
+          "key": "design-and-multimedia",
+          "link": "/design-and-multimedia",
+          "text": "design & multimedia"
+        },
+        {
+          "key": "social-media-management",
+          "link": "/social-media-management",
+          "text": "gestion social media"
+        },
+        {
+          "key": "website-conception",
+          "link": "/website-conception",
+          "text": "création sites web"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "copyright": "Tout droits réservés",
+    "navigation": [
+      { "key": "sitemap", "link": "/sitemap", "text": "Plan du site" },
+      {
+        "key": "legal-notice",
+        "link": "/legal-notice",
+        "text": "Mentions légales"
+      },
+      {
+        "key": "terms-conditions",
+        "link": "/terms-conditions",
+        "text": "Conditions générales"
+      },
+      {
+        "key": "data-protection",
+        "link": "/data-protection",
+        "text": "Protection des données"
+      },
+      {
+        "key": "cookie-management",
+        "link": "/cookie-management",
+        "text": "Paramètres des cookies"
+      },
+      {
+        "key": "faq",
+        "link": "/faq",
+        "text": "FAQ"
+      }
+    ],
+    "socialNetworks": [
+      { "key": "twitter", "link": "#", "icon": "twitter-x-fill" },
+      { "key": "instagram", "link": "#", "icon": "instagram-fill" },
+      { "key": "linkedin", "link": "#", "icon": "linkedin-box-fill" }
+    ]
+  }
+}

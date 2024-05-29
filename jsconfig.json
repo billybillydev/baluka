@@ -1,12 +1,7 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext"],
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleDetection": "force",
-    "jsx": "react-jsx",
-    "allowJs": true,
-    "checkJs": true,
+    "module": "CommonJS",
+    "target": "ES6",
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -18,6 +13,14 @@
     "skipLibCheck": true,
     "strict": true,
     "noFallthroughCasesInSwitch": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "$lib": ["src/lib"],
+      "$lib/*": ["src/lib/*"],
+      "$commands": ["src/commands"],
+      "$commands/*": ["src/commands/*"]
+    }
   }
 }
