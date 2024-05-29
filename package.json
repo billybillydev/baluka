@@ -1,6 +1,6 @@
 {
   "name": "balukajs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "src/index.js",
   "author": {
     "name": "billybillydev",
@@ -13,9 +13,9 @@
     "build": "tsup",
     "ci:version": "changeset version",
     "ci:release": "changeset publish --access public",
-    "pub:beta": "bun publish --no-git-checks --access public --tag beta",
-    "pub:next": "bun publish --no-git-checks --access public --tag next",
-    "pub:release": "bun publish --access public"
+    "pub:beta": "npm publish --no-git-checks --access public --tag beta",
+    "pub:next": "npm publish --no-git-checks --access public --tag next",
+    "pub:release": "npm publish --access public"
   },
   "exports": "./dist/index.js",
   "bin": {
