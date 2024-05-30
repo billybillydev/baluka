@@ -1,5 +1,11 @@
 # balukajs
 
+## 1.1.2
+
+### Patch Changes
+
+- added keywords in package.json
+
 ## 1.1.1
 
 ### Patch Changes
