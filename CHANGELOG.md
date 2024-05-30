@@ -1,5 +1,11 @@
 # balukajs
 
+## 1.1.3
+
+### Patch Changes
+
+- typo in package.json
+
 ## 1.1.2
 
 ### Patch Changes
