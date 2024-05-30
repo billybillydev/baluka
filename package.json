@@ -1,6 +1,6 @@
 {
   "name": "balukajs",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "main": "src/index.js",
   "author": {
     "name": "billybillydev",
@@ -40,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/believelody/balukajs.git"
+    "url": "git+https://github.com/billybillydev/baluka.git"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.5",
