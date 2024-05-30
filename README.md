@@ -49,3 +49,5 @@ I want this library to be challenged and see what use cases it can cover. For no
 And you ? What will you achieve with baluka ? Let me know ;)
 
 **Baluka is a lingala word meaning _to turn around_.**
+
+![baluka_meaning](public/baluka_meaning.png "Baluka's meaning from https://dic.lingala.be")

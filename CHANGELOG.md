@@ -1,5 +1,11 @@
 # balukajs
 
+## 1.1.1
+
+### Patch Changes
+
+- improved readme
+
 ## 1.1.0
 
 ### Minor Changes
