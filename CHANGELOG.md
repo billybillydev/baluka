@@ -1,5 +1,11 @@
 # balukajs
 
+## 1.2.0
+
+### Minor Changes
+
+- [fix] added conversion with optional properties detection (considered as minor changeset)
+
 ## 1.1.3
 
 ### Patch Changes

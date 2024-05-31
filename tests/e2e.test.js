@@ -7,7 +7,7 @@ import { expectedTsOutput3 } from "tests/expected-ts-output";
 
 describe("End-to-End Tests", () => {
   it("should print help when zero arguments passed", async () => {
-    const output = (await $`bun run bin/baluka-cli.js`.text()).trim();
+    const output = (await $`bun run dist/index.js`.text()).trim();
     const expectedOutput = expectedE2EOutput.trim();
     expect(output).toBe(expectedOutput);
   });

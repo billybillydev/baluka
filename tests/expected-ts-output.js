@@ -47,6 +47,13 @@ export interface Menu {
   key: string;
   link: string;
   text: string;
+  children?: MenuChildren[];
+}
+
+export interface MenuChildren {
+  key: string;
+  link: string;
+  text: string;
 }
 
 export interface NotFound {
@@ -128,4 +135,5 @@ export interface HomeContent {
 export interface HomeSeo {
   title: string;
 }
+
 `;

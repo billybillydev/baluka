@@ -51,6 +51,10 @@ export const expectedJSDocOutput2 = `/**
  * @property {string} menu[].key
  * @property {string} menu[].link
  * @property {string} menu[].text
+ * @property {object[]=} menu[].children
+ * @property {string} menu[].children[].key
+ * @property {string} menu[].children[].link
+ * @property {string} menu[].children[].text
  * @property {object} footer
  * @property {string} footer.copyright
  * @property {object[]} footer.navigation
