@@ -1,10 +1,13 @@
 {
   "name": "balukajs",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "main": "src/index.js",
   "author": {
     "name": "billybillydev",
     "url": "https://twitter.com/billybillydev"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "json",

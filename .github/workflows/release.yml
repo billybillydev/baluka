@@ -21,8 +21,7 @@ jobs:
         run: bun run build
 
       - name: Publish package
-        shell: bash
-        run: bun ci:release
+        run: bun pub:release
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+          BUN_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
           NODE_ENV: "production"

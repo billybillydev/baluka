@@ -1,5 +1,11 @@
 # balukajs
 
+## 1.2.3
+
+### Patch Changes
+
+- fixed deploy workflow script
+
 ## 1.2.2
 
 ### Patch Changes
