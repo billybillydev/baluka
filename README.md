@@ -14,6 +14,24 @@ Just simply:
 bun add balukajs
 ```
 
+or
+
+```bash
+npm install balukajs
+```
+
+or
+
+```bash
+pnpm add balukajs
+```
+
+or
+
+```bash
+yarn add balukajs
+```
+
 And that's it ! You ready to use baluka.
 
 # Usage
