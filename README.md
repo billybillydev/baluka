@@ -42,9 +42,11 @@ The essential works have been done. By automated a type definition conversion fr
 
 What coming soon is json schema as new format value. Don't hesitate to discuss with me if it's relevant.
 
-## Use Case
+## Use Cases
 
-I want this library to be challenged and see what use cases it can cover. For now, I mainly develop it for dealing with i18n feature. With our editor auto-completion, it's a must-have to get all known properties of our json language data. I will write very soon a detailed example.
+### Check examples to see some practical examples of baluka usage
+
+- [Managing translation json files](examples/translation/index.md)
 
 And you ? What will you achieve with baluka ? Let me know ;)
 
