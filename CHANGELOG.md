@@ -1,5 +1,11 @@
 # balukajs
 
+## 1.2.2
+
+### Patch Changes
+
+- added deploy and test workflow
+
 ## 1.2.1
 
 ### Patch Changes
