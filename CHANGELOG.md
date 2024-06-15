@@ -1,5 +1,11 @@
 # balukajs
 
+## 1.2.4
+
+### Patch Changes
+
+- added paths in test workflow to only consider src and test folders
+
 ## 1.2.3
 
 ### Patch Changes

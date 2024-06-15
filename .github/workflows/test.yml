@@ -3,6 +3,9 @@ name: Test running
 on:
   push:
   pull_request:
+    paths:
+        - src/**
+        - tests/**
     branches:
       - main
   merge_group:
