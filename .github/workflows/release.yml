@@ -30,5 +30,4 @@ jobs:
       - name: Publish package
         run: bun ci:release
         env:
-          BUN_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
-          NODE_ENV: "production"
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
