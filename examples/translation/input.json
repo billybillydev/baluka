@@ -1,0 +1,57 @@
+{
+  "pages": {
+    "home": {
+      "seo": {
+        "title": "Welcome to Our Home Page",
+        "description": "This is the home page of our website where you can find the latest updates and news."
+      },
+      "content": {
+        "header": "Welcome to Our Website",
+        "body": "Discover our latest offerings and stay updated with our news."
+      }
+    },
+    "about": {
+      "seo": {
+        "title": "About Us",
+        "description": "Learn more about our company, our mission, and our values."
+      },
+      "content": {
+        "header": "Who We Are",
+        "body": "We are a company committed to delivering the best services to our customers."
+      }
+    },
+    "services": {
+      "seo": {
+        "title": "Our Services",
+        "description": "Explore the wide range of services we offer to meet your needs."
+      },
+      "content": {
+        "header": "What We Offer",
+        "body": "From consulting to implementation, we provide comprehensive solutions."
+      }
+    },
+    "contact": {
+      "seo": {
+        "title": "Contact Us",
+        "description": "Get in touch with us for any inquiries or support."
+      },
+      "content": {
+        "header": "Reach Out to Us",
+        "body": "We are here to help you with any questions or concerns you may have."
+      }
+    }
+  },
+  "menu": {
+    "main": [
+      { "key": "home", "link": "/", "text": "Home" },
+      { "key": "about", "link": "/about", "text": "About Us" },
+      { "key": "services", "link": "/services", "text": "Services" },
+      { "key": "contact", "link": "/contact", "text": "Contact" }
+    ],
+    "footer": [
+      { "key": "privacy", "link": "/privacy", "text": "Privacy Policy" },
+      { "key": "terms", "link": "/terms", "text": "Terms of Service" },
+      { "key": "help", "link": "/help", "text": "Help Center" }
+    ]
+  }
+}
