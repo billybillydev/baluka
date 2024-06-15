@@ -1,0 +1,28 @@
+name: Package Release
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
+jobs:
+  publish_when_merged:
+    if: ${{ github.event.pull_request.merged == true && github.repository_owner == 'billybillydev' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v1
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build the package
+        run: bun run build
+
+      - name: Publish package
+        shell: bash
+        run: bun ci:release
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+          NODE_ENV: "production"
