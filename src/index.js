@@ -2,20 +2,21 @@
 
 import { convert } from "$commands/convert";
 import { watch } from "$commands/watch";
-import { getPackageJsonVersion } from "$lib/utils";
 import { Command } from "commander";
+import packageJson from 'package.json';
 
 process.on("SIGINT", () => process.exit(0));
 process.on("SIGTERM", () => process.exit(0));
 
 async function main() {
+  const packageJsonVersion = packageJson.version;
   const program = new Command();
 
   program
     .name("blk")
     .description("Transform json file into jsdoc or typescript definition")
     .version(
-      getPackageJsonVersion() || "1.0.0",
+      packageJsonVersion || "1.0.0",
       "-v, --version",
       "display the version number"
     )

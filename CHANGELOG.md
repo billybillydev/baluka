@@ -1,5 +1,11 @@
 # balukajs
 
+## 1.2.3
+
+### Patch Changes
+
+- used package.json as object
+
 ## 1.2.2
 
 ### Patch Changes
