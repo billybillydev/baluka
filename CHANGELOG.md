@@ -1,5 +1,11 @@
 # balukajs
 
+## 1.2.7
+
+### Patch Changes
+
+- fixed watch command name
+
 ## 1.2.6
 
 ### Patch Changes

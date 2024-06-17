@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import { convert } from "$commands/convert";
-import { watch } from "$commands/watch";
+import { convert as convertCommand } from "$commands/convert";
+import { watch as watchCommand } from "$commands/watch";
 import { Command } from "commander";
 import packageJson from 'package.json';
 
@@ -34,9 +34,9 @@ async function main() {
   const { watch, ...restProps } = program.opts();
 
   if (watch) {
-    watch(restProps);
+    watchCommand(restProps);
   } else {
-    convert(restProps);
+    convertCommand(restProps);
   }
 }
 
