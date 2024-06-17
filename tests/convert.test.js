@@ -5,6 +5,7 @@ import { access } from "fs/promises";
 import path from "path";
 import { expectedJSDocOutput2 } from "tests/expected-js-doc-output";
 import { expectedTsOutput2 } from "tests/expected-ts-output";
+import expectedSchemaOutput from "tests/expected-schema-output.json";
 
 describe("ConvertCommandNoInput", () => {
   it("should throw error if input is missing", () => {
@@ -55,8 +56,18 @@ describe("ConvertCommandForTypescript", () => {
     const consoleSpy = spyOn(console, "log");
     const input = path.join(__dirname, "./inputs/mock2.json");
     convert({ input, format: "ts" });
-    console.log(expectedTsOutput2)
+    console.log(expectedTsOutput2);
     expect(consoleSpy).toHaveBeenCalledWith(expectedTsOutput2);
+  });
+});
+
+describe("ConvertCommandForSchema", () => {
+  it("should read JSON file and output json schema", () => {
+    const consoleSpy = spyOn(console, "log");
+    const input = path.join(__dirname, "./inputs/mock3.json");
+    convert({ input, format: "ts" });
+    console.log(expectedSchemaOutput);
+    expect(consoleSpy).toHaveBeenCalledWith(expectedSchemaOutput);
   });
 });
 

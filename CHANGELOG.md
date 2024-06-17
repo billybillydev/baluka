@@ -1,5 +1,11 @@
 # balukajs
 
+## 1.3.0
+
+### Minor Changes
+
+- added schema format
+
 ## 1.2.7
 
 ### Patch Changes

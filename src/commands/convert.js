@@ -1,4 +1,5 @@
 import { jsonToJSDocTypes } from "$lib/json-to-jsdoc";
+import { buildJsonSchema } from "$lib/json-to-schema";
 import { jsonToTSInterface } from "$lib/json-to-ts-interface";
 import chalk from "chalk";
 import fs from "fs";
@@ -37,6 +38,12 @@ export function convert({ input, output, name, format }) {
       break;
     case "ts":
       result = jsonToTSInterface(data, name || defaultName);
+      break;
+    case "schema":
+      if (name) {
+        console.warn("name argument is not needed with format: schema");
+      }
+      result = buildJsonSchema(data);
       break;
     default:
       throw new Error(`Unknown format: ${format} !`);
