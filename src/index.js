@@ -31,22 +31,12 @@ async function main() {
     program.help();
   }
 
-  const options = program.opts();
+  const { watch, ...restProps } = program.opts();
 
-  if (options.watch) {
-    watch({
-      input: options.input,
-      output: options.output,
-      name: options.name,
-      format: options.format,
-    });
+  if (watch) {
+    watch(restProps);
   } else {
-    convert({
-      input: options.input,
-      output: options.output,
-      name: options.name,
-      format: options.format,
-    });
+    convert(restProps);
   }
 }
 

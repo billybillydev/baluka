@@ -1,5 +1,11 @@
 # balukajs
 
+## 1.2.6
+
+### Patch Changes
+
+- refactored index js
+
 ## 1.2.5
 
 ### Patch Changes
