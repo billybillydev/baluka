@@ -23,7 +23,7 @@ async function main() {
     .option("-i, --input <path>", "input JSON file")
     .option("-o, --output <path>", "output file")
     .option("--name <typeName>", "name of the type")
-    .option("--format <format>", "output format (jsdoc or ts)", "jsdoc")
+    .option("--format <format>", "output format (jsdoc, ts or schema)", "jsdoc")
     .option("--watch", "watch for changes")
     .parse(process.argv);
 

@@ -1,0 +1,279 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "home": {
+      "type": "object",
+      "properties": {
+        "seo": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            }
+          },
+          "required": ["title"]
+        },
+        "content": {
+          "type": "object",
+          "properties": {
+            "activities": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "motto": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "communication": {
+              "type": "string"
+            }
+          },
+          "required": ["activities", "motto", "communication"]
+        }
+      },
+      "required": ["seo", "content"]
+    },
+    "about": {
+      "type": "object",
+      "properties": {
+        "seo": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            }
+          },
+          "required": ["title"]
+        },
+        "content": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "presentation": {
+              "type": "string"
+            },
+            "specialization": {
+              "type": "string"
+            },
+            "expertise": {
+              "type": "string"
+            },
+            "sections": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "label": {
+                    "type": "string"
+                  },
+                  "items": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": ["label", "items"]
+              }
+            }
+          },
+          "required": [
+            "title",
+            "presentation",
+            "specialization",
+            "expertise",
+            "sections"
+          ]
+        }
+      },
+      "required": ["seo", "content"]
+    },
+    "contact": {
+      "type": "object",
+      "properties": {
+        "seo": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            }
+          },
+          "required": ["title"]
+        },
+        "content": {
+          "type": "object",
+          "properties": {
+            "address": {
+              "type": "string"
+            },
+            "telephone": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "partnership": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "required": ["label", "name"]
+            }
+          },
+          "required": ["address", "telephone", "email", "partnership"]
+        }
+      },
+      "required": ["seo", "content"]
+    },
+    "services": {
+      "type": "object",
+      "properties": {
+        "seo": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            }
+          },
+          "required": ["title"]
+        },
+        "content": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": ["title", "items"]
+        }
+      },
+      "required": ["seo", "content"]
+    },
+    "notFound": {
+      "type": "object",
+      "properties": {
+        "seo": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            }
+          },
+          "required": ["title"]
+        }
+      },
+      "required": ["seo"]
+    },
+    "menu": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "children": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "key": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              },
+              "required": ["key", "link", "text"]
+            }
+          }
+        },
+        "required": ["key", "link", "text"]
+      }
+    },
+    "footer": {
+      "type": "object",
+      "properties": {
+        "copyright": {
+          "type": "string"
+        },
+        "navigation": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string"
+              },
+              "link": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": ["key", "link", "text"]
+          }
+        },
+        "socialNetworks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string"
+              },
+              "link": {
+                "type": "string"
+              },
+              "icon": {
+                "type": "string"
+              }
+            },
+            "required": ["key", "link", "icon"]
+          }
+        }
+      },
+      "required": ["copyright", "navigation", "socialNetworks"]
+    }
+  },
+  "required": [
+    "home",
+    "about",
+    "contact",
+    "services",
+    "notFound",
+    "menu",
+    "footer"
+  ]
+}

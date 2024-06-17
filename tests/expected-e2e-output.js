@@ -7,6 +7,6 @@ Options:
   -i, --input <path>   input JSON file
   -o, --output <path>  output file
   --name <typeName>    name of the type
-  --format <format>    output format (jsdoc or ts) (default: "jsdoc")
+  --format <format>    output format (jsdoc, ts or schema) (default: "jsdoc")
   --watch              watch for changes
   -h, --help           display help for command`;

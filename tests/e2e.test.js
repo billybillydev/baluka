@@ -4,6 +4,7 @@ import fs from "fs";
 import { expectedE2EOutput } from "tests/expected-e2e-output";
 import { expectedJSDocOutput2, expectedJSDocOutput3 } from "tests/expected-js-doc-output";
 import { expectedTsOutput3 } from "tests/expected-ts-output";
+import expectedSchemaOutput from "tests/expected-schema-output.json";
 
 describe("End-to-End Tests", () => {
   it("should print help when zero arguments passed", async () => {
@@ -31,8 +32,13 @@ describe("End-to-End Tests", () => {
   it("should convert JSON to TS types and print output", async () => {
     const inputPath = "tests/inputs/mock3.json";
     const output = await $`bun start -i ${inputPath} --name IExample --format ts`.text();
-
     expect(output.trim()).toBe(expectedTsOutput3.trim());
+  });
+
+  it("should convert JSON to JSON Schema and print output", async () => {
+    const inputPath = "tests/inputs/mock3.json";
+    const output = await $`bun start -i ${inputPath} --format schema`.text();
+    expect(output.trim()).toBe(JSON.stringify(expectedSchemaOutput).trim());
   });
 
   it("should convert JSON to JSDoc types and write to output file", async () => {
@@ -51,5 +57,14 @@ describe("End-to-End Tests", () => {
 
     const output = fs.readFileSync(outputPath, "utf-8");
     expect(output.trim()).toBe(expectedTsOutput3.trim());
+  });
+
+  it("should convert JSON to JSON Schema and write to output file", async () => {
+    const inputPath = "tests/inputs/mock3.json";
+    const outputPath = "tests/outputs/mock3-schema.json";
+    await $`bun start -i ${inputPath} -o ${outputPath} --format schema`;
+
+    const output = fs.readFileSync(outputPath, "utf-8");
+    expect(output.trim()).toBe(JSON.stringify(expectedSchemaOutput).trim());
   });
 });
