@@ -1,0 +1,6 @@
+{
+  "home": {
+    "seo": { "title": "Test" },
+    "content": { "activities": ["a", "b"] }
+  }
+}
