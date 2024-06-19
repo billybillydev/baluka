@@ -21,6 +21,7 @@ async function main() {
       "display the version number"
     )
     .option("-i, --input <path>", "input JSON file")
+    .option("-I, --input-dir <path>", "input directory containing directories and json files")
     .option("-o, --output <path>", "output file")
     .option("--name <typeName>", "name of the type")
     .option("--format <format>", "output format (jsdoc, ts or schema)", "jsdoc")
@@ -30,7 +31,6 @@ async function main() {
   if (process.argv.length <= 2) {
     program.help();
   }
-
   const { watch, ...restProps } = program.opts();
 
   if (watch) {

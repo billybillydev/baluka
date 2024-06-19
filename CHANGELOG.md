@@ -1,5 +1,11 @@
 # balukajs
 
+## 1.4.0
+
+### Minor Changes
+
+- added -I / --input-dir to manage directory conversion.
+
 ## 1.3.0
 
 ### Minor Changes

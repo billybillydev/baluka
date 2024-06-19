@@ -1,3 +1,3 @@
 /**
- * @typedef {"json" | "ts" | "schema"} FormatType
+ * @typedef {"jsdoc" | "ts" | "schema"} FormatType
  */
