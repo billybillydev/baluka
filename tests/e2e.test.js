@@ -40,7 +40,7 @@ describe("End-to-End Tests", () => {
 
   it("should convert directory to JSDoc types and write to output file when --format is missing", async () => {
     const inputDirPath = "tests/inputs";
-    const outputPath = "tests/outputs/mock2.js";
+    const outputPath = "tests/outputs/mock-directory.js";
     await $`bun start -I ${inputDirPath} -o ${outputPath}`;
 
     const output = fs.readFileSync(outputPath, "utf-8");

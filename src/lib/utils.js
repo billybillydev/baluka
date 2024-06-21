@@ -22,11 +22,15 @@ import { camelCase } from "change-case";
  * @returns {string[]}
  */
 export function detectOptionalProperties(objectArray) {
+  const objectWithMandatoryProperties = objectArray.reduce((acc, cur) => {
+    return Object.keys(acc).length < Object.keys(cur).length ? acc : cur;
+  }, objectArray[0]);
+
   /** @type {string[]} */
-  const mandatoryProperties = Object.keys(objectArray[0]);
+  const mandatoryProperties = Object.keys(objectWithMandatoryProperties);
   /** @type {string[]} */
   const optionalProperties = [];
-  objectArray.slice(1).forEach((obj) => {
+  objectArray.forEach((obj) => {
     Object.keys(obj).forEach((key) => {
       if (!mandatoryProperties.includes(key)) {
         optionalProperties.push(key);
@@ -88,7 +92,7 @@ async function simplifyObject(obj, rootPath) {
         fileName.includes(".") || fileName.includes("-")
           ? camelCase(fileName)
           : fileName;
-      simpleObject[name] = file;
+      simpleObject[name] = JSON.parse(file);
     }
   }
   return simpleObject;

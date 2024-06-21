@@ -28,11 +28,20 @@ function generateProperties(
       value.length > 0 &&
       typeof value[0] === "object"
     ) {
-      generateProperties(value[0], `${propName}[]`, properties);
-
       const optionalProperties = detectOptionalProperties(value);
 
       if (optionalProperties.length > 0) {
+        // Build jsdoc type with element which has mandatory properties
+        const elementWithMandatoryProperties = value.reduce((acc, cur) => {
+          return Object.keys(acc).length < Object.keys(cur).length ? acc : cur;
+        }, value[0]);
+        generateProperties(
+          elementWithMandatoryProperties,
+          `${propName}[]`,
+          properties
+        );
+        
+        // Determine element with optional properties and build optional jsdoc properties
         const elementWithOptionalProperties = value.find((item) => {
           return optionalProperties.every((property) =>
             Object.keys(item).includes(property)
@@ -54,6 +63,8 @@ function generateProperties(
           properties,
           true
         );
+      } else {
+        generateProperties(value[0], `${propName}[]`, properties);
       }
     }
   }

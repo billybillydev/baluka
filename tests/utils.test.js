@@ -16,7 +16,7 @@ describe("DirectoryToJSON", () => {
   it("should return a json object", async () => {
     const inputDir = path.join(__dirname, "./inputs");
     const directoryJSON = await organizeToJSON(inputDir);
-    expect(directoryJSON).toEqual(expectedDirectoryToJsonOutput);
+    expect(directoryJSON).toStrictEqual(expectedDirectoryToJsonOutput);
   });
 
   it("should return empty object when directory is empty", async () => {

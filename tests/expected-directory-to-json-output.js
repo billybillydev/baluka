@@ -1,18 +1,236 @@
 export const expectedDirectoryToJsonOutput = {
-  mocks: {
-    mockThree:
-      '{\n  "home": {\n    "seo": {\n      "title": "Agence Mosi"\n    },\n    "content": {\n      "activities": ["évènementiel", "marketing", "communication digitale"],\n      "motto": ["être meilleur", "pour les autres"],\n      "communication": "communication"\n    }\n  },\n  "about": {\n    "seo": {\n      "title": "A propos de nous"\n    },\n    "content": {\n      "title": ["qui sommes", "nous ?"],\n      "presentation": "MOSI Agency » L\'Expertise IT Services 36O°.",\n      "specialization": "MOSI AGENCY est une entreprise spécialisée dans la communication globale offrant une vaste gamme de services, notamment la production de supports visuels diversifiés et des conseils en communication.",\n      "expertise": "Notre expertise s\'étend également à l\'ingénierie informatique, permettant des solutions novatrices à moindre coût. Dans ce domaine, nos services incluent :",\n      "sections": [\n        {\n          "label": "ingénierie informatique",\n          "items": [\n            "Développement de logiciels sur mesure",\n            "Solutions informatiques adaptées aux besoins spécifiques",\n            "Intégration de systèmes"\n          ]\n        },\n        {\n          "label": "services de communication",\n          "items": [\n            "Production de supports visuels variés",\n            "Conseil en stratégies de communication",\n            "Conception de publicités",\n            "Reportages",\n            "Community Management",\n            "Création de sites web"\n          ]\n        }\n      ]\n    }\n  },\n  "contact": {\n    "seo": {\n      "title": "Contactez-nous"\n    },\n    "content": {\n      "address": "Meudon la forêt, 92360",\n      "telephone": "+33663741976",\n      "email": "contact@mosi-agency",\n      "partnership": {\n        "label": "En partenariat avec :",\n        "name": "icell technologies"\n      }\n    }\n  },\n  "services": {\n    "seo": {\n      "title": "Nos Services"\n    },\n    "content": {\n      "title": "nos services",\n      "items": [\n        "organisation de célébrations festives",\n        "organisation d\'événements culturels",\n        "mise en place d\'un réseau d\'influence",\n        "coordination d\'une compagne marketing",\n        "optimisation sur google (seo)",\n        "services google analytics",\n        "google ads",\n        "publicité payante sur les réseaux sociaux (meta ads)",\n        "marketing des réseaux sociaux",\n        "personal branding",\n        "création de contenus",\n        "conception et développement de sites web",\n        "développement d\'applications mobiles",\n        "hébergement web & nom de domaine",\n        "adresses e-mails personnalisées",\n        "design graphique (infographie)",\n        "design de documents d\'entreprises (en-tête, factures,..)",\n        "publicités & reportages",\n        "infogérance (maintenance matérielle & logicielle)"\n      ]\n    }\n  },\n  "notFound": {\n    "seo": {\n      "title": "Page non trouvée"\n    }\n  },\n  "menu": [\n    { "key": "home", "link": "/", "text": "accueil" },\n    { "key": "about", "link": "/a-propos-de-nous", "text": "a propos de nous" },\n    { "key": "contact", "link": "/contact", "text": "contact" },\n    { "key": "services", "link": "/services", "text": "nos services" },\n    {\n      "key": "pricing",\n      "link": "/nos-tarifs",\n      "text": "tarifs",\n      "children": [\n        {\n          "key": "event-planning",\n          "link": "/event-planning",\n          "text": "service évènementiel"\n        },\n        {\n          "key": "marketing-campaign",\n          "link": "/marketing-campaign",\n          "text": "campagnes marketing"\n        },\n        {\n          "key": "design-and-multimedia",\n          "link": "/design-and-multimedia",\n          "text": "design & multimedia"\n        },\n        {\n          "key": "social-media-management",\n          "link": "/social-media-management",\n          "text": "gestion social media"\n        },\n        {\n          "key": "website-conception",\n          "link": "/website-conception",\n          "text": "création sites web"\n        }\n      ]\n    }\n  ],\n  "footer": {\n    "copyright": "Tout droits réservés",\n    "navigation": [\n      { "key": "sitemap", "link": "/sitemap", "text": "Plan du site" },\n      {\n        "key": "legal-notice",\n        "link": "/legal-notice",\n        "text": "Mentions légales"\n      },\n      {\n        "key": "terms-conditions",\n        "link": "/terms-conditions",\n        "text": "Conditions générales"\n      },\n      {\n        "key": "data-protection",\n        "link": "/data-protection",\n        "text": "Protection des données"\n      },\n      {\n        "key": "cookie-management",\n        "link": "/cookie-management",\n        "text": "Paramètres des cookies"\n      },\n      {\n        "key": "faq",\n        "link": "/faq",\n        "text": "FAQ"\n      }\n    ],\n    "socialNetworks": [\n      { "key": "twitter", "link": "#", "icon": "twitter-x-fill" },\n      { "key": "instagram", "link": "#", "icon": "instagram-fill" },\n      { "key": "linkedin", "link": "#", "icon": "linkedin-box-fill" }\n    ]\n  }\n}\n',
-    mockOne:
-      '{\n  "userId": 1,\n  "id": 1,\n  "title": "delectus aut autem",\n  "completed": false\n}\n',
-    mock_two:
-      '{\n  "home": {\n    "seo": { "title": "Test" },\n    "content": { "activities": ["a", "b"] }\n  }\n}\n',
-  },
   emptyDirectory: {},
-  mock1:
-    '{\n  "userId": 1,\n  "id": 1,\n  "title": "delectus aut autem",\n  "completed": false\n}\n',
-  mock2:
-    '{\n  "home": {\n    "seo": { "title": "Test" },\n    "content": { "activities": ["a", "b"] }\n  }\n}\n',
-  emptyObject: "{}",
-  mock3:
-    '{\n  "home": {\n    "seo": {\n      "title": "Agence Mosi"\n    },\n    "content": {\n      "activities": ["évènementiel", "marketing", "communication digitale"],\n      "motto": ["être meilleur", "pour les autres"],\n      "communication": "communication"\n    }\n  },\n  "about": {\n    "seo": {\n      "title": "A propos de nous"\n    },\n    "content": {\n      "title": ["qui sommes", "nous ?"],\n      "presentation": "MOSI Agency » L’Expertise IT Services 36O°.",\n      "specialization": "MOSI AGENCY est une entreprise spécialisée dans la communication globale offrant une vaste gamme de services, notamment la production de supports visuels diversifiés et des conseils en communication.",\n      "expertise": "Notre expertise s\'étend également à l\'ingénierie informatique, permettant des solutions novatrices à moindre coût. Dans ce domaine, nos services incluent :",\n      "sections": [\n        {\n          "label": "ingénierie informatique",\n          "items": [\n            "Développement de logiciels sur mesure",\n            "Solutions informatiques adaptées aux besoins spécifiques",\n            "Intégration de systèmes"\n          ]\n        },\n        {\n          "label": "services de communication",\n          "items": [\n            "Production de supports visuels variés",\n            "Conseil en stratégies de communication",\n            "Conception de publicités",\n            "Reportages",\n            "Community Management",\n            "Création de sites web"\n          ]\n        }\n      ]\n    }\n  },\n  "contact": {\n    "seo": {\n      "title": "Contactez-nous"\n    },\n    "content": {\n      "address": "Meudon la forêt, 92360",\n      "telephone": "+33663741976",\n      "email": "contact@mosi-agency",\n      "partnership": {\n        "label": "En partenariat avec :",\n        "name": "icell technologies"\n      }\n    }\n  },\n  "services": {\n    "seo": {\n      "title": "Nos Services"\n    },\n    "content": {\n      "title": "nos services",\n      "items": [\n        "organisation de célébrations festives",\n        "organisation d\'événements culturels",\n        "mise en place d\'un réseau d\'influence",\n        "coordination d\'une compagne marketing",\n        "optimisation sur google (seo)",\n        "services google analytics",\n        "google ads",\n        "publicité payante sur les réseaux sociaux (meta ads)",\n        "marketing des réseaux sociaux",\n        "personal branding",\n        "création de contenus",\n        "conception et développement de sites web",\n        "développement d\'applications mobiles",\n        "hébergement web & nom de domaine",\n        "adresses e-mails personnalisées",\n        "design graphique (infographie)",\n        "design de documents d\'entreprises (en-tête, factures,..)",\n        "publicités & reportages",\n        "infogérance (maintenance matérielle & logicielle)"\n      ]\n    }\n  },\n  "notFound": {\n    "seo": {\n      "title": "Page non trouvée"\n    }\n  },\n  "menu": [\n    { "key": "home", "link": "/", "text": "accueil" },\n    { "key": "about", "link": "/a-propos-de-nous", "text": "a propos de nous" },\n    { "key": "contact", "link": "/contact", "text": "contact" },\n    { "key": "services", "link": "/services", "text": "nos services" },\n    {\n      "key": "pricing",\n      "link": "/nos-tarifs",\n      "text": "tarifs",\n      "children": [\n        {\n          "key": "event-planning",\n          "link": "/event-planning",\n          "text": "service évènementiel"\n        },\n        {\n          "key": "marketing-campaign",\n          "link": "/marketing-campaign",\n          "text": "campagnes marketing"\n        },\n        {\n          "key": "design-and-multimedia",\n          "link": "/design-and-multimedia",\n          "text": "design & multimedia"\n        },\n        {\n          "key": "social-media-management",\n          "link": "/social-media-management",\n          "text": "gestion social media"\n        },\n        {\n          "key": "website-conception",\n          "link": "/website-conception",\n          "text": "création sites web"\n        }\n      ]\n    }\n  ],\n  "footer": {\n    "copyright": "Tout droits réservés",\n    "navigation": [\n      { "key": "sitemap", "link": "/sitemap", "text": "Plan du site" },\n      {\n        "key": "legal-notice",\n        "link": "/legal-notice",\n        "text": "Mentions légales"\n      },\n      {\n        "key": "terms-conditions",\n        "link": "/terms-conditions",\n        "text": "Conditions générales"\n      },\n      {\n        "key": "data-protection",\n        "link": "/data-protection",\n        "text": "Protection des données"\n      },\n      {\n        "key": "cookie-management",\n        "link": "/cookie-management",\n        "text": "Paramètres des cookies"\n      },\n      {\n        "key": "faq",\n        "link": "/faq",\n        "text": "FAQ"\n      }\n    ],\n    "socialNetworks": [\n      { "key": "twitter", "link": "#", "icon": "twitter-x-fill" },\n      { "key": "instagram", "link": "#", "icon": "instagram-fill" },\n      { "key": "linkedin", "link": "#", "icon": "linkedin-box-fill" }\n    ]\n  }\n}\n',
+  emptyObject: {},
+  mock1: {
+    userId: 1,
+    id: 1,
+    title: "delectus aut autem",
+    completed: false,
+  },
+  mock2: {
+    home: {
+      seo: { title: "Test" },
+      content: { activities: ["a", "b"] },
+    },
+  },
+  mock3: {
+    home: {
+      seo: {
+        title: "Home SEO Title",
+      },
+      content: {
+        activities: ["Activity 1", "Activity 2"],
+        motto: ["Motto 1", "Motto 2"],
+        communication: "Sample Communication",
+      },
+    },
+    about: {
+      seo: {
+        title: "About SEO Title",
+      },
+      content: {
+        title: ["About Title 1", "About Title 2"],
+        presentation: "About Presentation",
+        specialization: "Specialization",
+        expertise: "Expertise",
+        sections: [
+          {
+            label: "Section 1",
+            items: ["Item 1", "Item 2"],
+          },
+        ],
+      },
+    },
+    contact: {
+      seo: {
+        title: "Contact SEO Title",
+      },
+      content: {
+        address: "123 Main St",
+        telephone: "123-456-7890",
+        email: "contact@example.com",
+        partnership: {
+          label: "Partnership Label",
+          name: "Partner Name",
+        },
+      },
+    },
+    services: {
+      seo: {
+        title: "Services SEO Title",
+      },
+      content: {
+        title: "Services Title",
+        items: ["Service 1", "Service 2"],
+      },
+    },
+    notFound: {
+      seo: {
+        title: "404 Not Found",
+      },
+    },
+    menu: [
+      {
+        key: "home",
+        link: "/home",
+        text: "Home",
+        children: [
+          {
+            key: "subHome1",
+            link: "/home/sub1",
+            text: "Sub Home 1",
+          },
+        ],
+      },
+      {
+        key: "about",
+        link: "/about",
+        text: "About",
+      },
+    ],
+    footer: {
+      copyright: "© 2024 Your Company",
+      navigation: [
+        {
+          key: "privacy",
+          link: "/privacy",
+          text: "Privacy Policy",
+        },
+        {
+          key: "terms",
+          link: "/terms",
+          text: "Terms of Service",
+        },
+      ],
+      socialNetworks: [
+        {
+          key: "twitter",
+          link: "https://twitter.com/yourcompany",
+          icon: "twitter-icon",
+        },
+        {
+          key: "facebook",
+          link: "https://facebook.com/yourcompany",
+          icon: "facebook-icon",
+        },
+      ],
+    },
+  },
+  mocks: {
+    mockThree: {
+      home: {
+        seo: {
+          title: "Home SEO Title",
+        },
+        content: {
+          activities: ["Activity 1", "Activity 2"],
+          motto: ["Motto 1", "Motto 2"],
+          communication: "Sample Communication",
+        },
+      },
+      about: {
+        seo: {
+          title: "About SEO Title",
+        },
+        content: {
+          title: ["About Title 1", "About Title 2"],
+          presentation: "About Presentation",
+          specialization: "Specialization",
+          expertise: "Expertise",
+          sections: [
+            {
+              label: "Section 1",
+              items: ["Item 1", "Item 2"],
+            },
+          ],
+        },
+      },
+      contact: {
+        seo: {
+          title: "Contact SEO Title",
+        },
+        content: {
+          address: "123 Main St",
+          telephone: "123-456-7890",
+          email: "contact@example.com",
+          partnership: {
+            label: "Partnership Label",
+            name: "Partner Name",
+          },
+        },
+      },
+      services: {
+        seo: {
+          title: "Services SEO Title",
+        },
+        content: {
+          title: "Services Title",
+          items: ["Service 1", "Service 2"],
+        },
+      },
+      notFound: {
+        seo: {
+          title: "404 Not Found",
+        },
+      },
+      menu: [
+        {
+          key: "home",
+          link: "/home",
+          text: "Home",
+          children: [
+            {
+              key: "subHome1",
+              link: "/home/sub1",
+              text: "Sub Home 1",
+            },
+          ],
+        },
+        {
+          key: "about",
+          link: "/about",
+          text: "About",
+        },
+      ],
+      footer: {
+        copyright: "© 2024 Your Company",
+        navigation: [
+          {
+            key: "privacy",
+            link: "/privacy",
+            text: "Privacy Policy",
+          },
+          {
+            key: "terms",
+            link: "/terms",
+            text: "Terms of Service",
+          },
+        ],
+        socialNetworks: [
+          {
+            key: "twitter",
+            link: "https://twitter.com/yourcompany",
+            icon: "twitter-icon",
+          },
+          {
+            key: "facebook",
+            link: "https://facebook.com/yourcompany",
+            icon: "facebook-icon",
+          },
+        ],
+      },
+    },
+    mockOne: {
+      userId: 1,
+      id: 1,
+      title: "delectus aut autem",
+      completed: false,
+    },
+    mock_two: {
+      home: {
+        seo: { title: "Test" },
+        content: { activities: ["a", "b"] },
+      },
+    },
+  },
 };
