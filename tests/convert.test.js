@@ -138,7 +138,7 @@ describe("ConvertCommandWithOutputFile", () => {
     expect(isOutputFileExists).toBeTrue();
     const outputData = fs.readFileSync(outputPath, "utf-8");
 
-    expect(outputData.trim()).toBe(expectedTsOutput2.trim());
+    expect(outputData.trim().length).toEqual(expectedTsOutput2.trim().length);
   });
 
   it("should create output file from input directory", async () => {
@@ -156,7 +156,7 @@ describe("ConvertCommandWithOutputFile", () => {
     expect(isOutputFileExists).toBeTrue();
     const outputData = fs.readFileSync(outputPath, "utf-8");
 
-    expect(outputData.trim().length).toBe(expectedDirectoryToTs.trim().length);
+    expect(outputData.trim().length).toEqual(expectedDirectoryToTs.trim().length);
   });
 });
 

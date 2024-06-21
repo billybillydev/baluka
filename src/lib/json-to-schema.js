@@ -28,7 +28,7 @@ function traverse(obj, schema, isOptionalProperty = false) {
           required: [],
         };
         if (!isOptionalProperty) {
-            schema.required.push(key);
+          schema.required.push(key);
         }
         traverse(value, schema.properties[key]);
       } else if (valueType === "array") {
@@ -37,7 +37,7 @@ function traverse(obj, schema, isOptionalProperty = false) {
           items: {},
         };
         if (!isOptionalProperty) {
-            schema.required.push(key);
+          schema.required.push(key);
         }
         if (value.length > 0 && typeof value[0] === "object") {
           schema.properties[key].items = {
@@ -45,9 +45,13 @@ function traverse(obj, schema, isOptionalProperty = false) {
             properties: {},
             required: [],
           };
-          traverse(value[0], schema.properties[key].items);
           const optionalProperties = detectOptionalProperties(value);
           if (optionalProperties.length > 0) {
+            const elementWithMandatoryProperties = value.reduce((acc, cur) => {
+              return Object.keys(acc).length < Object.keys(cur).length
+                ? acc
+                : cur;
+            }, value[0]);
             const elementWithOptionalProperties = value.find((item) => {
               return optionalProperties.every((property) =>
                 Object.keys(item).includes(property)
@@ -63,10 +67,16 @@ function traverse(obj, schema, isOptionalProperty = false) {
               {}
             );
             traverse(
+              elementWithMandatoryProperties,
+              schema.properties[key].items
+            );
+            traverse(
               optionalPropertiesObject,
               schema.properties[key].items,
               true
             );
+          } else {
+            traverse(value[0], schema.properties[key].items);
           }
         } else {
           schema.properties[key].items.type = typeof value[0];

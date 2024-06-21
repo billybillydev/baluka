@@ -1,166 +1,103 @@
 {
   "home": {
     "seo": {
-      "title": "Agence Mosi"
+      "title": "Home SEO Title"
     },
     "content": {
-      "activities": ["évènementiel", "marketing", "communication digitale"],
-      "motto": ["être meilleur", "pour les autres"],
-      "communication": "communication"
+      "activities": ["Activity 1", "Activity 2"],
+      "motto": ["Motto 1", "Motto 2"],
+      "communication": "Sample Communication"
     }
   },
   "about": {
     "seo": {
-      "title": "A propos de nous"
+      "title": "About SEO Title"
     },
     "content": {
-      "title": ["qui sommes", "nous ?"],
-      "presentation": "MOSI Agency » L'Expertise IT Services 36O°.",
-      "specialization": "MOSI AGENCY est une entreprise spécialisée dans la communication globale offrant une vaste gamme de services, notamment la production de supports visuels diversifiés et des conseils en communication.",
-      "expertise": "Notre expertise s'étend également à l'ingénierie informatique, permettant des solutions novatrices à moindre coût. Dans ce domaine, nos services incluent :",
+      "title": ["About Title 1", "About Title 2"],
+      "presentation": "About Presentation",
+      "specialization": "Specialization",
+      "expertise": "Expertise",
       "sections": [
         {
-          "label": "ingénierie informatique",
-          "items": [
-            "Développement de logiciels sur mesure",
-            "Solutions informatiques adaptées aux besoins spécifiques",
-            "Intégration de systèmes"
-          ]
-        },
-        {
-          "label": "services de communication",
-          "items": [
-            "Production de supports visuels variés",
-            "Conseil en stratégies de communication",
-            "Conception de publicités",
-            "Reportages",
-            "Community Management",
-            "Création de sites web"
-          ]
+          "label": "Section 1",
+          "items": ["Item 1", "Item 2"]
         }
       ]
     }
   },
   "contact": {
     "seo": {
-      "title": "Contactez-nous"
+      "title": "Contact SEO Title"
     },
     "content": {
-      "address": "Meudon la forêt, 92360",
-      "telephone": "+33663741976",
-      "email": "contact@mosi-agency",
+      "address": "123 Main St",
+      "telephone": "123-456-7890",
+      "email": "contact@example.com",
       "partnership": {
-        "label": "En partenariat avec :",
-        "name": "icell technologies"
+        "label": "Partnership Label",
+        "name": "Partner Name"
       }
     }
   },
   "services": {
     "seo": {
-      "title": "Nos Services"
+      "title": "Services SEO Title"
     },
     "content": {
-      "title": "nos services",
-      "items": [
-        "organisation de célébrations festives",
-        "organisation d'événements culturels",
-        "mise en place d'un réseau d'influence",
-        "coordination d'une compagne marketing",
-        "optimisation sur google (seo)",
-        "services google analytics",
-        "google ads",
-        "publicité payante sur les réseaux sociaux (meta ads)",
-        "marketing des réseaux sociaux",
-        "personal branding",
-        "création de contenus",
-        "conception et développement de sites web",
-        "développement d'applications mobiles",
-        "hébergement web & nom de domaine",
-        "adresses e-mails personnalisées",
-        "design graphique (infographie)",
-        "design de documents d'entreprises (en-tête, factures,..)",
-        "publicités & reportages",
-        "infogérance (maintenance matérielle & logicielle)"
-      ]
+      "title": "Services Title",
+      "items": ["Service 1", "Service 2"]
     }
   },
   "notFound": {
     "seo": {
-      "title": "Page non trouvée"
+      "title": "404 Not Found"
     }
   },
   "menu": [
-    { "key": "home", "link": "/", "text": "accueil" },
-    { "key": "about", "link": "/a-propos-de-nous", "text": "a propos de nous" },
-    { "key": "contact", "link": "/contact", "text": "contact" },
-    { "key": "services", "link": "/services", "text": "nos services" },
     {
-      "key": "pricing",
-      "link": "/nos-tarifs",
-      "text": "tarifs",
+      "key": "home",
+      "link": "/home",
+      "text": "Home",
       "children": [
         {
-          "key": "event-planning",
-          "link": "/event-planning",
-          "text": "service évènementiel"
-        },
-        {
-          "key": "marketing-campaign",
-          "link": "/marketing-campaign",
-          "text": "campagnes marketing"
-        },
-        {
-          "key": "design-and-multimedia",
-          "link": "/design-and-multimedia",
-          "text": "design & multimedia"
-        },
-        {
-          "key": "social-media-management",
-          "link": "/social-media-management",
-          "text": "gestion social media"
-        },
-        {
-          "key": "website-conception",
-          "link": "/website-conception",
-          "text": "création sites web"
+          "key": "subHome1",
+          "link": "/home/sub1",
+          "text": "Sub Home 1"
         }
       ]
+    },
+    {
+      "key": "about",
+      "link": "/about",
+      "text": "About"
     }
   ],
   "footer": {
-    "copyright": "Tout droits réservés",
+    "copyright": "© 2024 Your Company",
     "navigation": [
-      { "key": "sitemap", "link": "/sitemap", "text": "Plan du site" },
       {
-        "key": "legal-notice",
-        "link": "/legal-notice",
-        "text": "Mentions légales"
+        "key": "privacy",
+        "link": "/privacy",
+        "text": "Privacy Policy"
       },
       {
-        "key": "terms-conditions",
-        "link": "/terms-conditions",
-        "text": "Conditions générales"
-      },
-      {
-        "key": "data-protection",
-        "link": "/data-protection",
-        "text": "Protection des données"
-      },
-      {
-        "key": "cookie-management",
-        "link": "/cookie-management",
-        "text": "Paramètres des cookies"
-      },
-      {
-        "key": "faq",
-        "link": "/faq",
-        "text": "FAQ"
+        "key": "terms",
+        "link": "/terms",
+        "text": "Terms of Service"
       }
     ],
     "socialNetworks": [
-      { "key": "twitter", "link": "#", "icon": "twitter-x-fill" },
-      { "key": "instagram", "link": "#", "icon": "instagram-fill" },
-      { "key": "linkedin", "link": "#", "icon": "linkedin-box-fill" }
+      {
+        "key": "twitter",
+        "link": "https://twitter.com/yourcompany",
+        "icon": "twitter-icon"
+      },
+      {
+        "key": "facebook",
+        "link": "https://facebook.com/yourcompany",
+        "icon": "facebook-icon"
+      }
     ]
   }
 }

@@ -62,6 +62,9 @@ function determineType(
       let arrayType = "";
       const optionalProperties = detectOptionalProperties(value);
       if (optionalProperties.length > 0) {
+        const elementWithMandatoryProperties = value.reduce((acc, cur) => {
+          return Object.keys(acc).length < Object.keys(cur).length ? acc : cur;
+        }, value[0]);
         const elementWithOptionalProperties = value.find((item) => {
           return optionalProperties.every((property) =>
             Object.keys(item).includes(property)
@@ -77,7 +80,7 @@ function determineType(
         );
 
         arrayType = determineType(
-          value[0],
+          elementWithMandatoryProperties,
           keyName,
           parent,
           interfaces,
